@@ -1,6 +1,6 @@
-const Card = ( {kanji} ) => {
+const Card = ( {kanji, scorePoint} ) => {
     return (
-        <div className="card">
+        <div className="card" onClick={scorePoint}>
             <p>{kanji}</p>
         </div>
     )
