@@ -40,7 +40,7 @@ const CardHolder = ( {level} ) => {
     }
 
     return(
-        <div>
+        <div id="card-holder">
             {mapCards()}
         </div>
     );

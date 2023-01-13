@@ -1,6 +1,6 @@
 const Card = ( {kanji} ) => {
     return (
-        <div>
+        <div className="card">
             <p>{kanji}</p>
         </div>
     )
