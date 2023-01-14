@@ -73,3 +73,28 @@ header p {
   font-size: 40px;
   transition: all ease-in-out 0.1s;
 }
+
+@media (max-width: 717px) {
+  header h1 {
+    display: none;
+    font-size: 40px !important;
+  }
+
+  header p {
+    font-size: 24px !important  ;
+  }
+
+  #card-holder {
+    grid-template-columns: repeat(auto-fill, 50px);
+    grid-template-rows: repeat(auto-fill, 100px);
+    width: 300px;
+    row-gap: 4rem;
+    column-gap: 10rem;
+    margin: 2rem auto;
+  }
+
+  .card {
+    padding: 1rem !important;
+    font-size: 60px !important;
+  }
+}
