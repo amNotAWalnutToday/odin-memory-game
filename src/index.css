@@ -56,12 +56,12 @@ header {
 }
 
 .highlight,
-.card:hover {
+.card:hover:not(.loading) {
   filter: brightness(125%);
   transform: scale(1.05);
 }
 
-.card:hover {
+.card:hover:not(.loading) {
   cursor: pointer;
 }
 
@@ -72,6 +72,11 @@ header h1 {
 header p {
   font-size: 40px;
   transition: all ease-in-out 0.1s;
+}
+
+.loading {
+  margin: 2rem auto;
+  text-align: center;
 }
 
 @media (max-width: 717px) {
@@ -96,5 +101,10 @@ header p {
   .card {
     padding: 1rem !important;
     font-size: 60px !important;
+  }
+
+  .loading {
+    font-size: 40px !important;
+    white-space: pre;
   }
 }

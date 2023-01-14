@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import Header from './components/Header';
 import CardHolder from './components/CardHolder';
+import Loading from './components/Loading';
 
 function App() {
   const [level, setLevel] = useState(1);
@@ -203,11 +204,12 @@ function App() {
         score={score}
         topScore={topScore} 
       />
-      { !loading &&
-        <CardHolder 
+      { !loading 
+      ?<CardHolder 
         levelKanji={levelKanji}
         scorePoint={scorePoint}
       />
+      :<Loading/>
       }
     </div>
   );
