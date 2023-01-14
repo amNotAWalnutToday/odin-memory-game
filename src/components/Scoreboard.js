@@ -1,6 +1,7 @@
-const Scoreboard = ( {score, topScore} ) => {
+const Scoreboard = ( {level, score, topScore} ) => {
     return(
         <div>
+            <p>Level: {level}</p>
             <p>Score: {score}</p>
             <p>Top Score: {topScore}</p>
         </div>

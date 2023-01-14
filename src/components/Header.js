@@ -1,10 +1,14 @@
 import Scoreboard from './Scoreboard';
 
-const Header = ( {score, topScore} ) => {
+const Header = ( {level, score, topScore} ) => {
     return(
         <header>
             <h1>Kanji Memory</h1>
-            <Scoreboard score={score} topScore={topScore} />
+            <Scoreboard
+                level={level} 
+                score={score} 
+                topScore={topScore} 
+            />
         </header>
     );
 }
