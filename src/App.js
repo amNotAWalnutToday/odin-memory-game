@@ -51,6 +51,7 @@ function App() {
   const scorePoint = (e) => {
     if(willLose(e)) return resetGame();
     setScore(score + 1);
+    shuffleCards();
     if(numOfCards - 1 === pressedKanji.length) return nextLevel();
   };
 
@@ -58,6 +59,7 @@ function App() {
     loadCards();
     setLevel(level + 1);
     setPressedKanji([]);
+    setLevelKanji([]);
   }
 
   const willLose = (e) => {
@@ -73,6 +75,17 @@ function App() {
     setPressedKanji([]);
     setLevelKanji([]);
     loadCards();
+  }
+
+  const shuffleCards = () => {
+    const cards = [...levelKanji];
+    const shuffledCards = [];
+    for(let i = 0; i < levelKanji.length; i++){
+      const ran = Math.floor(Math.random() * (levelKanji.length - i));
+      shuffledCards.push(cards[ran]);
+      cards.splice(ran, 1);
+    }
+    setLevelKanji(shuffledCards);
   }
 
   const loadCards = () => {
