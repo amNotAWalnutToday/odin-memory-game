@@ -1,0 +1,14 @@
+{
+  "files": {
+    "main.css": "/odin-memory-game/static/css/main.f8bd2fca.css",
+    "main.js": "/odin-memory-game/static/js/main.ae0b4a46.js",
+    "static/media/page-bg.png": "/odin-memory-game/static/media/page-bg.1a5b6a4e32a8c60d5cbc.png",
+    "index.html": "/odin-memory-game/index.html",
+    "main.f8bd2fca.css.map": "/odin-memory-game/static/css/main.f8bd2fca.css.map",
+    "main.ae0b4a46.js.map": "/odin-memory-game/static/js/main.ae0b4a46.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.f8bd2fca.css",
+    "static/js/main.ae0b4a46.js"
+  ]
+}
